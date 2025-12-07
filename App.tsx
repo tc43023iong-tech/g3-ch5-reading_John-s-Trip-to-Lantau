@@ -83,6 +83,13 @@ const App: React.FC = () => {
 
         {activeTab === 'read' && (
           <div className="animate-fade-in space-y-6">
+             
+             {/* Instruction Banner */}
+             <div className="bg-indigo-50 border-2 border-indigo-100 rounded-2xl p-4 text-center mb-4 shadow-sm">
+                <span className="text-2xl font-black text-indigo-900 block sm:inline leading-tight">Open your book to page 17 and 18</span>
+                <span className="text-indigo-400 font-bold ml-0 sm:ml-3 block sm:inline text-lg mt-1 sm:mt-0">(請翻開書本第 17 和 18 頁)</span>
+             </div>
+
              <div className="bg-gradient-to-r from-yellow-100 to-orange-50 rounded-3xl p-6 mb-10 border-2 border-white shadow-md relative overflow-hidden">
                <div className="absolute top-0 right-0 opacity-10 transform translate-x-4 -translate-y-4">
                   <BookOpen size={120} />
